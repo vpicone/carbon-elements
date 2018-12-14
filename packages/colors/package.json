@@ -25,8 +25,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn clean && bundler bundle src/index.js --name CarbonColors && node tasks/build.js",
-    "clean": "rimraf es lib umd scss"
+    "build": "yarn clean && yarn tsc && yarn bundle",
+    "clean": "rimraf es lib umd scss",
+    "tsc": "tsc -p ./tsconfig.json",
+    "bundle":  "bundler bundle out/* --name CarbonColors && node tasks/build.js"
   },
   "devDependencies": {
     "@carbon/bundler": "0.0.1-alpha.25",
@@ -34,7 +36,8 @@
     "fs-extra": "^7.0.0",
     "node-sass": "^4.9.4",
     "prettier": "^1.14.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "typescript": "^3.2.2"
   },
   "eyeglass": {
     "exports": false,

@@ -1,0 +1,46 @@
+export interface Tokens {
+  brand01: string;
+  brand02: string;
+  brand03: string;
+  interactive01: string;
+  interactive02: string;
+  ui01: string;
+  ui02: string;
+  ui03: string;
+  ui04: string;
+  ui05: string;
+  text01: string;
+  text02: string;
+  text03: string;
+  icon01: string;
+  icon02: string;
+  field01: string;
+  field02: string;
+  inverse01: string;
+  inverse02: string;
+  support01: string;
+  support02: string;
+  support03: string;
+  support04: string;
+  focus: string;
+  activePrimary: string;
+  activeSecondary: string;
+  activeUI: string;
+  activeDanger: string;
+  disabled01: string;
+  disabled02: string;
+  disabled03: string;
+  hoverUI: string;
+  hoverDanger: string;
+  hoverPrimary: string;
+  hoverPrimaryText: string;
+  hoverSecondary: string;
+  hoverRow: string;
+  selectedUI: string;
+  overlay01: string;
+  overlay02: string;
+  visitedLink: string;
+}
+
+declare const tokens: Tokens;
+export default tokens;

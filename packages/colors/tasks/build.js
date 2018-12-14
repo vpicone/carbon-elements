@@ -7,7 +7,7 @@
 
 'use strict';
 
-const build = require('../lib/build');
+const build = require('../out/build');
 
 build().catch(error => {
   console.error(error); // eslint-disable-line

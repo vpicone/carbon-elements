@@ -25,10 +25,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn clean && yarn tsc && yarn bundle",
+    "build": "yarn clean && yarn compile && node tasks/generateSass.js",
     "clean": "rimraf es lib umd scss",
-    "tsc": "tsc -p ./tsconfig.json",
-    "bundle":  "bundler bundle out/* --name CarbonColors && node tasks/build.js"
+    "compile": "yarn compile:es && yarn compile:cjs && yarn compile:umd",
+    "compile:es": "tsc --lib es2017 --module es2015 --target es5 --outDir es/",
+    "compile:cjs": "tsc --lib es2017 --module commonjs --target es5 --outDir lib/",
+    "compile:umd": "tsc --lib es2017 --module umd --target es5 --outDir umd/"
   },
   "devDependencies": {
     "@carbon/bundler": "0.0.1-alpha.25",

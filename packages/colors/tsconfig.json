@@ -3,7 +3,6 @@
     "target": "es2017",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "out",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,

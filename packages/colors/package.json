@@ -26,7 +26,8 @@
   },
   "scripts": {
     "build": "yarn clean && bundler bundle src/index.js --name CarbonColors && node tasks/build.js && bundler check 'scss/*.scss'",
-    "clean": "rimraf css es lib umd scss"
+    "clean": "rimraf css es lib umd scss",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@carbon/bundler": "0.0.1-alpha.31",

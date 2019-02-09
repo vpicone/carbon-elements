@@ -27,7 +27,8 @@
   },
   "scripts": {
     "build": "yarn clean && bundler bundle src/index.js --name CarbonType",
-    "clean": "rimraf css es lib umd"
+    "clean": "rimraf css es lib umd",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@carbon/import-once": "0.0.1-alpha.31",

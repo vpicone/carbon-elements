@@ -69,8 +69,8 @@ export function breakpointDown(name) {
   return `@media (max-width: ${breakpoints[name].width})`;
 }
 
-export function breakpoint(...args) {
-  return breakpointUp(...args);
+export function breakpoint(name) {
+  return breakpointUp(name);
 }
 
 // Mini-unit
